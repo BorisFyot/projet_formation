@@ -68,6 +68,13 @@
     </repository>
 </distributionManagement>
 
+<scm>
+   <connection>scm:git:git@github.com:BorisFyot/projet_formation.git</connection>
+   <url>git@github.com:BorisFyot/projet_formation.git</url>
+   <developerConnection>scm:git:git@github.com:BorisFyot/projet_formation.git</developerConnection>
+</scm>
+
+
 <!--  <distributionManagement>
     <site>
       <id>site-server</id>
@@ -99,11 +106,9 @@
       <plugin>
    		<groupId>org.apache.maven.plugins</groupId>
    		<artifactId>maven-release-plugin</artifactId>
-   		<version>2.4.2</version>
    		<configuration>
       			<tagNameFormat>v@{project.version}</tagNameFormat>
       			<autoVersionSubmodules>true</autoVersionSubmodules>
-      			<releaseProfiles>releases</releaseProfiles>
    		</configuration>
       </plugin>
 
