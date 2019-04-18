@@ -72,7 +72,6 @@
    <connection>scm:git:git@github.com:BorisFyot/projet_formation.git</connection>
    <url>scm:git:git@github.com:BorisFyot/projet_formation.git</url>
    <developerConnection>scm:git:git@github.com:BorisFyot/projet_formation.git</developerConnection>
-  <tag>HEAD</tag>
   </scm>
 
 <!--  <distributionManagement>
