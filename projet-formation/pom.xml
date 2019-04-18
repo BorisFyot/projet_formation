@@ -1,12 +1,11 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.lesformateurs.maven-project</groupId>
   <artifactId>devopsapp</artifactId>
   <packaging>pom</packaging>
-  <version>1.0-SNAPSHOT</version>
+  <version>1.0.1</version>
   <name>DevOps App</name>
   <description>Application DevOps App developpe par LesFormateurs.</description>
   <url>http://www.lesformateurs.com</url>
@@ -92,12 +91,25 @@
         </configuration>
       </plugin>
 
-      <plugin>
+<!--	<plugin>
 	<artifactId>maven-release-plugin</artifactId>
 	<configuration>
                 <autoVersionSubmodules>true</autoVersionSubmodules>
     		<releaseProfiles>release</releaseProfiles>       
         </configuration>
+      </plugin>
+-->
+
+
+      <plugin>
+   		<groupId>org.apache.maven.plugins</groupId>
+   		<artifactId>maven-release-plugin</artifactId>
+   		<version>2.4.2</version>
+   		<configuration>
+      			<tagNameFormat>v@{project.version}</tagNameFormat>
+      			<autoVersionSubmodules>true</autoVersionSubmodules>
+      			<releaseProfiles>releases</releaseProfiles>
+   		</configuration>
       </plugin>
 
       <plugin>
