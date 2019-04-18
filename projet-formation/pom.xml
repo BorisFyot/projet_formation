@@ -57,14 +57,14 @@
 
 <distributionManagement>
     <snapshotRepository>
-        <id>snapshots</id>
+        <id>nexus-snapshot</id>
         <name>devops-app-01-snapshots</name>
-        <url>http://10.0.2.6:8081/artifactory/devopsapp-snapshot</url>
+        <url>http://192.168.100.93:8081/repository/maven-snapshots/</url>
     </snapshotRepository>
         <repository>
-        <id>central</id>
+        <id>nexus-release</id>
         <name>devops-app-01-releases</name>
-        <url>http://10.0.2.6:8081/artifactory/devopsapp-releases</url>
+        <url>http://192.168.100.93:8081/repository/maven-releases/</url>
     </repository>
 </distributionManagement>
 
