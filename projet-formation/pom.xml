@@ -88,6 +88,7 @@
 
       <plugin>
         <artifactId>maven-release-plugin</artifactId>
+	<version>1.0.0</version>
         <configuration>
           <autoVersionSubmodules>true</autoVersionSubmodules>
         </configuration>
