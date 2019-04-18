@@ -5,7 +5,7 @@
   <groupId>com.lesformateurs.maven-project</groupId>
   <artifactId>devopsapp</artifactId>
   <packaging>pom</packaging>
-  <version>2.0.6</version>
+  <version>2.0.7-SNAPSHOT</version>
   <name>Groupe1</name>
   <description>Application DevOps App developpe par LesFormateurs.</description>
   <url>http://www.lesformateurs.com</url>
@@ -72,7 +72,7 @@
    <connection>scm:git:git@github.com:BorisFyot/projet_formation.git</connection>
    <url>scm:git:git@github.com:BorisFyot/projet_formation.git</url>
    <developerConnection>scm:git:git@github.com:BorisFyot/projet_formation.git</developerConnection>
-  <tag>v2.0.6</tag>
+  <tag>HEAD</tag>
   </scm>
 
 <!--  <distributionManagement>
