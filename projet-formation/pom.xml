@@ -17,7 +17,7 @@
 
   <scm>
      <connection>scm:git:https://github.com/BorisFyot/projet_formation.git</connection>
-     <url>https://github.com/BorisFyot/projet_formation.git</url>
+     <url>borisfyot:Fbnsis94@https://github.com/BorisFyot/projet_formation.git</url>
      <developerConnection>scm:git:https://github.com/BorisFyot/projet_formation.git</developerConnection>
     <tag>HEAD</tag>
   </scm>
