@@ -5,10 +5,11 @@
   <parent>
     <groupId>com.lesformateurs.maven-project</groupId>
     <artifactId>devopsapp</artifactId>
-    <version>1.0</version>
+    <version>1.1-SNAPSHOT</version>
     <relativePath>../pom.xml</relativePath>
   </parent>
   <artifactId>webapp</artifactId>
+  <version>1.0.1</version>
   <packaging>war</packaging>
   <name>Webapp DevOps App</name>
   <description>Partie Web pour application DevOps App</description>
@@ -39,9 +40,4 @@
     </dependency>
 
   </dependencies>
-
-
-  <scm>
-    <tag>v1.0</tag>
-  </scm>
 </project>
