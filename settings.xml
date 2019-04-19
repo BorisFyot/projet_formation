@@ -6,12 +6,12 @@
    <server>
       <id>nexus-release</id>
       <username>user01</username>
-      <password>{+Tt66bAEZiMHBCulP0bH6UlK+KbPbEc9TouH6qYPNbc=}</password>
+      <password>password</password>
    </server>
    <server>
       <id>nexus-snapshot</id>
       <username>user01</username>
-      <password>{+Tt66bAEZiMHBCulP0bH6UlK+KbPbEc9TouH6qYPNbc=}</password>
+      <password>password</password>
    </server>
 </servers>
     <!--<mirrors>
