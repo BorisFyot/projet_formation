@@ -28,7 +28,7 @@ then
 	if !(wget $serveurmavendata)
 	then
 		echo "probleme telechargement"
-		exit 103
+		exit 1
 	fi
 
 #Recuperation de la valeur de la dernière version du fichier
@@ -45,7 +45,7 @@ then
 	if !( wget $serveur_snapshot)
 	then
 		echo "probleme telechargement"
-		exit 104
+		exit 1
 	fi
 #Cleans
 	if (ls ./maven-metadata.xml)
@@ -58,18 +58,27 @@ else
 	if !(wget $serveur_release)
 	then 
 		echo "probleme telechargement"
-		exit 105
+		exit 1
 	fi	
 fi
 
+#Lancement du script dossier.sh sur poste distant pour créer /data
 if !(ssh -t $user@$host dossier=$dossier "$(<./dossier.sh)")
 then
 	echo "erreur lors du ssh"
-	exit 106
+	exit 1
 fi
 	
+#Envoie du fichier via SCP
 if !(scp ./$fichier $user@$host:$dossier)
 then
 	echo "erreur lors du scp"
-	exit 107
+	exit 1
+fi
+
+#nettoyage du projet. 
+if !(rm -f ./$fichier)
+then 
+	echo "Erreur nettoyage"
+	exit 1
 fi
